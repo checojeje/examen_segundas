@@ -26,10 +26,10 @@
 		</style>
 	</head>
 	<body>
-		<h1 style="text-align:center;">¡¡FELICES FIESTAS!! :)	</h1>
+		<h1 style="text-align:center;">¡BAILE DE ELFO POR LA FELIZ NAVIDAD! :)	</h1>
 		<footer>
-			Nombre: Ortiz Martinez Angel Ibraym.<br>
-			Números de control: 22200198.<br>
+			Nombre: QUIROZ GUZMAN JESUS SERGIO.<br>
+			Números de control: 22200762.<br>
 		</footer>
 		<script type="importmap">
 			{
@@ -85,7 +85,7 @@
 		scene.add(sunLight);
 	
 		const rgbeLoader = new RGBELoader();
-		rgbeLoader.load('models/rgbe/blaubeuren_church_square_4k.hdr', (texture) => {
+		rgbeLoader.load('models/rgbe/snowy_park_01_4k.hdr', (texture) => {
 			texture.mapping = THREE.EquirectangularReflectionMapping;
 			scene.background = texture;
 			scene.environment = texture;
@@ -95,7 +95,7 @@
 	
 		createChandelier();	
 	const loader = new FBXLoader();
-	loader.load('models/fbx/Silly Dancing.fbx', (object) => {
+	loader.load('models/fbx/Thriller Part 3.fbx', (object) => {
 		mixer = new THREE.AnimationMixer(object);
 		const action = mixer.clipAction(object.animations[0]);
 		action.play();
